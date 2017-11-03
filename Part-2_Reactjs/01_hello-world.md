@@ -2,7 +2,7 @@
 
 **html**:
 ```html
-<div id=“root”>
+<div id="root">
 </div>
 ```
 
