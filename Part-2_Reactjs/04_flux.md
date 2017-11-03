@@ -12,7 +12,7 @@ Flux是Facebook的一個架構，隨著應用程式愈來愈複雜，主要解�
 #### 最重要的事：Flux能做什麼？
 
 想像一下個view的結構，有父元件與子元件
-```
+```jsx
 <ParentComponent data={dataJson}>
   <ChildComponent data={dataJson} />
 </ParentComponent>
@@ -43,13 +43,13 @@ Todo list的行為是：按下[送出]後，在list處新增一筆項目
 共有2個component，分別為 < TodoHeader /\> 和 < TodoList />
 
 ##### 有經驗者一定會馬上想到：
-(1) < TodoHeader />裡一定有onClick函數
-(2) < TodoList />裡應該有draw list的函數
+(1) `<TodoHeader />`裡一定有onClick函數
+(2) `<TodoList />`裡應該有draw list的函數
 但這是傳統的設計方式。
 
 ##### Flux流程並不是這樣，它的設計哲學是：
 (1) button click後去改變資料(Flux稱為store)
-(2) < TodoList />的畫面去監控store，若有變化則重新render()
+(2) `<TodoList />`的畫面去監控store，若有變化則重新render()
 有了這樣的哲學，我們看code入門就會快上許多!
 
 下面看code時，請記住Flux的流程：

@@ -1,19 +1,19 @@
 #### 最簡單的一個例子
 
 **html**:
-```
+```html
 <div id=“root”>
 </div>
 ```
 
 **js**:
-```
+```js
 ReactDOM.render(<h1>Hello, world!</h1>, 
     document.getElementById('root')
 );
 ```
 或
-```
+```js
 ReactDOM.render(<Hello />, // 使用JSX
     document.getElementById('root') 
 ); // 較複雜的UI，會採用此法

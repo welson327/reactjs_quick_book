@@ -7,7 +7,7 @@
 
 
 比如你會常看到
-```
+```js
 class MyComponent extents React.Component {
   render() {
     return <div>Hello World</div>;
@@ -21,7 +21,7 @@ class MyComponent extents React.Component {
 http://blog.kdchang.cc/2016/04/04/react-react-native-es5-es6-cheat-sheet/
 
 如果以下的定義您看不懂
-```
+```js
 const MyComponent = props => (
   <div className={props.className} />
 ); 
