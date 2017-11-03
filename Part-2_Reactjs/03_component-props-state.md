@@ -24,7 +24,7 @@ var productInfo = {
 畫Product這個Component，並傳入product=productInfo
 ```js
 ReactDOM.render( <Product product={productInfo} />, // 畫出Component
-  document.getElementById(‘product') 
+  document.getElementById('product') 
 );
 ```
 定義<Product />, <ProductFooter />
@@ -76,10 +76,10 @@ class Product extends React.Component {
   }
   render() {
     return (
-    <div className="product” onClick={this.onClickProduct}> // 定義onClick
+    <div className="product" onClick={this.onClickProduct}> // 定義onClick
       <img src={this.props.product.previewImg} />
-      <div className="title”>{this.props.product.title}</div>
-      <div className="desc”>{this.props.product.desc}</div>
+      <div className="title">{this.props.product.title}</div>
+      <div className="desc">{this.props.product.desc}</div>
       <ProductFooter product={this.props.product} />
     </div>
     );

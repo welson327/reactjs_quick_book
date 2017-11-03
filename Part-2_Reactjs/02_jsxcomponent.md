@@ -1,6 +1,6 @@
 #### 直接看範例
 
-```
+```js
 // JS檔(或JSX檔)裡，必須先匯入相關的module
 import React from ‘react’;
 import ReactDOM from ‘react-dom’;

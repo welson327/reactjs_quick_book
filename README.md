@@ -22,7 +22,7 @@
 
 **Part-1: 預備知識**
 
-* [什麼是React?](https://github.com/welson327/reactjs_quick_book/blob/master/Part-1_Beforehand/01_hello-world.md)
+* [什麼是React?](https://github.com/welson327/reactjs_quick_book/blob/master/Part-1_Beforehand/01_what-is-reactjs.md)
 
 * [基礎知識先修班：React ES5、ES6+ 常見用法對照表](https://github.com/welson327/reactjs_quick_book/blob/master/Part-1_Beforehand/02_es5-es6-comparison.md)
 
