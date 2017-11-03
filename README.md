@@ -22,9 +22,9 @@
 
 **Part-1: 預備知識**
 
-* 什麼是React?
+* [什麼是React?](https://github.com/welson327/reactjs_quick_book/blob/master/Part-1_Beforehand/01_hello-world.md)
 
-* 基礎知識先修班：React ES5、ES6+ 常見用法對照表
+* [基礎知識先修班：React ES5、ES6+ 常見用法對照表](https://github.com/welson327/reactjs_quick_book/blob/master/Part-1_Beforehand/02_es5-es6-comparison.md)
 
 
 
@@ -32,15 +32,15 @@
 
 * React開發環境簡介
 
-* Hello World
+* [Hello World](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/01_hello-world.md)
 
-* JSX/Component
+* [JSX/Component](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/02_jsxcomponent.md)
 
-* Component / props / state
+* [Component / props / state](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/03_component-props-state.md)
 
 * Router
 
-* Flux
+* [Flux](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/04_flux.md)
 
 * Redux簡介\(學React-Redux前必讀!\)
 
