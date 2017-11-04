@@ -80,7 +80,7 @@ JSON結構，必須有一個 type及任何樣式的payload
   
 ### Store
   
-前面我們定義了「發生了什麼」的 action，和處理 action 的reducer。 
+前面我們定義了「發生了什麼」的 action，和處理 action 的reducer。  
 Store 是把它們結合在一起的物件，負責處理資料。  
   
 由 `getState()` 取得 state；  
