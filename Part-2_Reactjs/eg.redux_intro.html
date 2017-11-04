@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redux with jQuery</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.5.2/redux.js"></script>
+</head>
+
+<body>
+
+<div>
+  Count = <span id="num">#</span>
+  <button type="button" id="inc">+</button>
+  <button type="button" id="dec">-</button>
+</div>
+
+<script>
+  // Reducer
+  const counter = (state = 0, actions) => {
+    switch (actions.type) {
+      case 'INCREMENT': return state + 1;
+      case 'DECREMENT': return state - 1;
+      default: return state
+    }
+  }
+
+  // Store to hold state of the app
+  const store = Redux.createStore(counter);
+
+  // The only way to mutate the internal state is to dispatch an action.
+  $('#inc').click(() => store.dispatch({type: 'INCREMENT'}));
+  $('#dec').click(() => store.dispatch({type: 'DECREMENT'}));
+
+  // Use subscribe() to update the UI in response to state changes.
+  store.subscribe(() => {
+    $('#num').html(store.getState())
+  });
+</script>
+</body>
+</html>

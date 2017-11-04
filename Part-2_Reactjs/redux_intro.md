@@ -1,7 +1,7 @@
 ## Redux簡介
+-----------------------------
 
-#### 什麼是Redux？為什麼要Redux?
-----------------------------
+### 什麼是Redux？為什麼要Redux?
 
 英文原話：Predictable state container for JavaScript 
 翻成中文就是「可預測 state 容器」。這鬼才看的懂吧？(我們先跳過)
@@ -14,7 +14,7 @@
 最後再慢慢補充Redux的概念!
 
 
-#### Redux怎麼運作的
+### Redux怎麼運作的
 
 我什麼圖也不畫，就用文字解釋，講的愈白話你愈能秒懂！
 
@@ -44,7 +44,9 @@ store.subscribe(() => {
 ```
 
 簡單總結就是：
+```
 click -> store.dispatch(action) -> reducer function -> 由 store.subscribe() 更新UI
+```
 
 就這麼簡單而已!
  
@@ -53,7 +55,7 @@ click -> store.dispatch(action) -> reducer function -> 由 store.subscribe() 更
 (2) action, reducer function, store
 
 
-#### 三大原則
+### 三大原則
 
 1. 所有的資料都以state描述，存於redux的store裡；
 
@@ -62,7 +64,7 @@ click -> store.dispatch(action) -> reducer function -> 由 store.subscribe() 更
 3. 由reducer function接收action後，回傳新的state。
 
 
-#### Action
+### Action
 
 JSON結構，必須有一個 type及任何樣式的payload
 例:
@@ -72,11 +74,11 @@ JSON結構，必須有一個 type及任何樣式的payload
 由 `store.dispatch(action)` 發出
 
 
-#### Reducer Function
+### Reducer Function
 請參考 https://www.tipga.com/e/5966d3e83286fe34e10611f9
 
 
-#### Store
+### Store
 
 前面我們定義了「發生了什麼」的 action，和處理 action 的reducer。
 Store 是把它們結合在一起的物件，負責處理資料。 
@@ -88,7 +90,7 @@ Store 是把它們結合在一起的物件，負責處理資料。
 **重要觀念! Redux 中只會有一個 store儲存所有資料(一般資料，UI狀態，…)。**
 
 
-#### 完整範例
+### 完整範例
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -132,7 +134,7 @@ Store 是把它們結合在一起的物件，負責處理資料。
 </body>
 </html>
 ```
-另存成index.html後，就可以直接在Browser執行了!
+另存成index.html後，就可以直接在Browser執行了!([Source](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/eg.redux_intro.html))
 
 
 最後，如果你想懂更多，可以參考[繁中版的官網](https://chentsulin.github.io/redux/index.html)! 你會更快上手!

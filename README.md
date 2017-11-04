@@ -42,9 +42,9 @@
 
 * [Flux](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/04_flux.md)
 
-* Redux簡介\(學React-Redux前必讀!\)
+* [Redux簡介\(學React-Redux前必讀!\)](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/redux_intro.md)
 
-* React-Redux 
+* [React-Redux](https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/react-redux.md)
 
 **Part-3 進階**
 
