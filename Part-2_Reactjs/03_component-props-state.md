@@ -1,15 +1,15 @@
-上節我們大致說明什麼是Component，並使用props技巧將資料傳給Component
-這節我們將以一個較完整的例子來說明props / state
+上節我們大致說明什麼是Component，並使用props技巧將資料傳給Component  
+這節我們將以一個較完整的例子來說明props / state  
 
 #### 以商品為例
 
-我們想要畫出一個「商品」，總共四個欄位，由上至下依序是
-「預覽圖:previewImg」
-「名稱:title」
-「描述:desc」
-「瀏覽數:browsingCnt」
-為了讓例子說明Component內有一個子Component
-browsingCnt是在一個ProductFooter裡的
+我們想要畫出一個「商品」，總共四個欄位，由上至下依序是  
+「預覽圖:previewImg」  
+「名稱:title」  
+「描述:desc」  
+「瀏覽數:browsingCnt」  
+為了讓例子說明Component內有一個子Component  
+browsingCnt是在一個ProductFooter裡的  
 ![](https://tipga.s3-ap-northeast-1.amazonaws.com/0/welson/l_593972503286fe086837e513.png)
 
 商品資料如下:
@@ -56,10 +56,10 @@ class ProductFooter extends React.Component {
 
 #### 如果click一下商品，就把瀏覽數加1，那該怎麼做呢？
 
-這時會使用到React的state觀念
-props可以想成是Component的初始值
-state可以想成是Component資料變化後的值
-
+這時會使用到React的state觀念  
+props可以想成是Component的初始值  
+state可以想成是Component資料變化後的值  
+  
 ```js
 class Product extends React.Component {
   constructor(props) { // 定義constructor, 必須寫
