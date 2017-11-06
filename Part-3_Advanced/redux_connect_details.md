@@ -56,7 +56,7 @@ return boundActionCreators
 ```
 
 代表，把actionCreators內的所有json key(如果是function)都`bindActionCreator()`一次。最後回傳已經bind過的產物。  
-```
+```js
 function bindActionCreator(actionCreator, dispatch) {
   return (...args) => dispatch(actionCreator(...args))
 }
