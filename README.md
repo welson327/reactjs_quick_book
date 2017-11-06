@@ -48,7 +48,7 @@
 
 **Part-3 進階**
 
-* connect\(\), mapDispatchToProps 詳解
+* [connect\(\), mapDispatchToProps 詳解](https://github.com/welson327/reactjs_quick_book/blob/master/Part-3_Advanced/redux_connect_details.md)
 
 **Part-4 補充資料**
 
