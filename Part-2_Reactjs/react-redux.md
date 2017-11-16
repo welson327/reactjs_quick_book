@@ -21,6 +21,7 @@ action會送到reducer function內處理，最後在`store.subscribe()`的call b
 所以目標是：找出實作`store.dispatch(action)`, `store.subscribe()`的地方  
   
 如果你不清楚redux的概念，請先秒懂以下文章  
+https://github.com/welson327/reactjs_quick_book/blob/master/Part-2_Reactjs/redux_intro.md
 https://www.tipga.com/e/5968922a3286fe6f7957dc2e
  
 本文主要介紹 react-redux  
