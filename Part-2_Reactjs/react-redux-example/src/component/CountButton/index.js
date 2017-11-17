@@ -5,19 +5,17 @@ import clickAction from './action.js';
 
 export class CountButton extends React.Component{
     onClickCountButton(count, delay){
-        console.log("(1) #onClickCountButton: this.props:");
-        console.log(this.props);
+        console.log("(1) CountButton#onClickCountButton: this.props:", this.props);
 
         // this.props.actions 可以直接使用，是因為有connect()
         var action2dispatch = this.props.actions.clickAction(count, delay); // dispatch a action to reducer
     }
     render(){
-        console.log("render: props=");
-        console.log(this.props);
+        console.log("CountButton#render: props=", this.props);
         return (
             <div>
                 <h1>{this.props.clickInfo.cnt}</h1>
-                <button onClick={this.onClickCountButton.bind(this, 1, 0)}>Add by 1</button>
+                <button onClick={this.onClickCountButton.bind(this, 1)}>Add by 1</button>
             </div>
         )
     }
@@ -28,26 +26,21 @@ function mapStateToProps(state) {
     return ret; // return state for component to re-render()
 }
 
-function mapActionToProps(dispatch) {
-    console.log("#mapActionToProps: clickAction=");console.log(clickAction);
+function mapDispatchToProps(dispatch) {
+    console.log("#mapDispatchToProps: clickAction=");console.log(clickAction);
 
     // bind action to call store.dispatch(action)
     // http://cn.redux.js.org/docs/api/bindActionCreators.html
-    // var ret = { actions: bindActionCreators(clickAction, dispatch), fooField: "foo-value" };
+    var ret = { actions: bindActionCreators(clickAction, dispatch), fooKey: "foo-value" };
 
-    // Or you can use following for more readable
+    // Or you can use 'dispatch(clickAction)' to map to props.
     // http://cn.redux.js.org/docs/basics/UsageWithReact.html
-    // var ret = {
-    //   actions: {
-    //     clickAction: (cnt, delay) => { dispatch(clickAction(cnt, delay)); }
-    //   }
-    // };
 
-    console.log("#mapActionToProps: ret.actions:");
+    console.log("#mapDispatchToProps: ret.actions:");
     console.log(ret.actions);
 
     return ret; // return members for this.props to use
 }
 
 // connect component to store of <Provider store={store}/>
-export default connect(mapStateToProps, mapActionToProps)(CountButton);
+export default connect(mapStateToProps, mapDispatchToProps)(CountButton);
