@@ -4,18 +4,18 @@ import { connect } from 'react-redux';
 import clickAction from './action.js';
 
 export class CountButton extends React.Component{
-    onClickCountButton(count, delay){
+    onClickCountButton(count){
         console.log("(1) CountButton#onClickCountButton: this.props:", this.props);
 
         // this.props.actions 可以直接使用，是因為有connect()
-        var action2dispatch = this.props.actions.clickAction(count, delay); // dispatch a action to reducer
+        var action2dispatch = this.props.actions.clickAction(count); // dispatch a action to reducer
     }
     render(){
         console.log("CountButton#render: props=", this.props);
         return (
             <div>
                 <h1>{this.props.clickInfo.cnt}</h1>
-                <button onClick={this.onClickCountButton.bind(this, 1)}>Add by 1</button>
+                <button onClick={this.onClickCountButton.bind(this, 1)}> +1 </button>
             </div>
         )
     }
